@@ -1,0 +1,34 @@
+
+.setting_navs nav {
+  font-family: 'Merienda One', cursive;
+  padding: 10px;
+  font-size: 17px;
+}
+
+.setColor {
+  color: black;
+  font-weight: 900;
+}
+
+.setColor:hover {
+  color: black;
+  font-weight: 900;
+}
+
+#navbarSupportedContent ul li a {
+  color: black;
+  font-weight: 900;
+}
+
+.navpad ul li {
+  padding-right: 24px;
+}
+
+.colrey {
+  font-weight: 900;
+  border: 1.7px solid black;
+  border-bottom-width: 0px;
+  border-radius: 6px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}

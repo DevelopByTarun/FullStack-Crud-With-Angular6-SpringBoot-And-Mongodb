@@ -1,0 +1,54 @@
+<div class="text-center" id="jumb">
+    <h1 id="setHead">Add Customer</h1>
+</div>
+<div class="container-fluid">
+  <div class="row" id="setAddBack">
+    <div class="col-sm-12">
+      <div class="sub-main-w3">
+        <form name="form" (ngSubmit)="fm.form.valid && callCreateCustomer()" #fm="ngForm" novalidate>
+          <div class="form-style-agile animated fadeInLeftBig register1_animation">
+            <label>
+              Name
+              <i class="fas fa-user-secret"></i>
+            </label>
+            <input type="text" name="name" id="name" [(ngModel)]="addCustomer.name" #name="ngModel" placeholder="Enter Name" class="resetClass" required/>
+            <span *ngIf="name.dirty && name.invalid && name.errors['required']" [ngClass]="'errorStyle'">
+                Name Is Required(Can't be left empty)
+            </span>
+          </div>
+          <div class="form-style-agile animated fadeInRightBig register2_animation">
+              <label>
+                Age
+                <i class="fas fa-blind"></i>
+              </label>
+              <input type="text" name="age" id="age" [(ngModel)]="addCustomer.age" #age="ngModel" placeholder="Enter Age" class="resetClass" required/>
+              <span *ngIf="age.dirty && age.invalid && age.errors['required']" [ngClass]="'errorStyle'">
+                Age Is Required(Can't be left empty)
+              </span>
+            </div>
+            <div class="form-style-agile animated fadeInLeftBig register1_animation">
+                <label>
+                  City
+                  <i class="fas fa-building"></i>
+                </label>
+                <input type="text" name="city" id="city" [(ngModel)]="addCustomer.city" #city="ngModel" placeholder="Enter City" class="resetClass" required/>
+                <span *ngIf="city.dirty && city.invalid && city.errors['required']" [ngClass]="'errorStyle'">
+                    City Is Required(Can't be left empty)
+                </span>
+              </div>
+              <div class="form-style-agile animated fadeInRightBig register2_animation">
+                  <label>
+                    Pincode
+                    <i class="fas fa-map-marker-alt"></i>
+                  </label>
+                  <input type="text" name="pincode" id="pincode" [(ngModel)]="addCustomer.pincode" #pincode="ngModel" placeholder="Enter Pincode" class="resetClass" required/>
+                  <span *ngIf="pincode.dirty && pincode.invalid && pincode.errors['required']" [ngClass]="'errorStyle'">
+                      Pincode Is Required(Can't be left empty)
+                  </span>
+                </div>
+          <input type="submit" class="animated fadeInDownBig register4_animation" value="Add Customer">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

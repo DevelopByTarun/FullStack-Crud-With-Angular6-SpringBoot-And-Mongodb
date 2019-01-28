@@ -1,0 +1,38 @@
+<div class="text-center" id="jumb">
+    <h1 id="setHead">Fetch Customers</h1>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                      <thead class="thead-dark">
+                        <tr>
+                          <th scope="col">Id</th>
+                          <th scope="col">Name</th>
+                          <th scope="col">Age</th>
+                          <th scope="col">City</th>
+                          <th scope="col">Pincode</th>
+                          <th scope="col">Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let customer of allCustomers">
+                          <td>{{customer.id}}</td>
+                          <td>{{customer.name}}</td>
+                          <td>{{customer.age}}</td>
+                          <td>{{customer.city}}</td>
+                          <td>{{customer.pincode}}</td>
+                          <td>
+                              <div class="btn-group" role="group" aria-label="Basic example">
+                                  <button type="button" (click)="callEditCustomer(customer.id)" class="btn btn-primary">Edit</button>&nbsp;&nbsp;
+                                  <button type="button" (click)="callDeleteCustomer(customer.id)" class="btn btn-danger">Delete</button>
+                              </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                </table>
+              </div>
+        </div>
+    </div>
+</div>

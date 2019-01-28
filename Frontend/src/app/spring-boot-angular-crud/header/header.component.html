@@ -1,0 +1,33 @@
+<div class="setting_navs">
+  <nav class="navbar navbar-expand-sm bg-warning navbar-dark">
+    <a class="setColor navbar-brand" routerLink="/">SBA6-Crud</a>&nbsp;&nbsp;&nbsp;
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse navpad" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="colrey" routerLink="/" [routerLinkActiveOptions]="{exact : true}">
+            <i class="fa fa-home"></i> &nbsp;Home<span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="colrey" routerLink="/addcust">
+            <i class="fas fa-save"></i> &nbsp;Add Customer
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="colrey" routerLink="/getcust">
+            <i class="fas fa-archive"></i> &nbsp;Fetch Customers
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="colrey" routerLink="/updatecust">
+            <i class="fas fa-edit"></i> &nbsp;Update Customer
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>

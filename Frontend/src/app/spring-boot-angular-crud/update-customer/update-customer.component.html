@@ -1,0 +1,42 @@
+<div class="text-center" id="jumb">
+    <h1 id="setHead">Update Customer</h1>
+</div>
+<div class="container-fluid">
+  <div class="row" id="setAddBack">
+    <div class="col-sm-12">
+      <div class="sub-main-w3">
+        <form name="form" (ngSubmit)="fm.form.valid && callUpdateCustomer()" #fm="ngForm" novalidate>
+          <div class="form-style-agile animated fadeInLeftBig update1_animation">
+            <label>
+              Name
+              <i class="fas fa-user-secret"></i>
+            </label>
+            <input type="text" name="name" id="name" [(ngModel)]="updateCustomer.name" #name="ngModel" placeholder="Enter Name"/>
+          </div>
+          <div class="form-style-agile animated fadeInRightBig update2_animation">
+              <label>
+                Age
+                <i class="fas fa-blind"></i>
+              </label>
+              <input type="text" name="age" id="age" [(ngModel)]="updateCustomer.age" #age="ngModel" placeholder="Enter Age"/>
+            </div>
+            <div class="form-style-agile animated fadeInLeftBig update1_animation">
+                <label>
+                  City
+                  <i class="fas fa-building"></i>
+                </label>
+                <input type="text" name="city" id="city" [(ngModel)]="updateCustomer.city" #city="ngModel" placeholder="Enter City"/>
+              </div>
+              <div class="form-style-agile animated fadeInRightBig update2_animation">
+                  <label>
+                    Pincode
+                    <i class="fas fa-map-marker-alt"></i>
+                  </label>
+                  <input type="text" name="pincode" id="pincode" [(ngModel)]="updateCustomer.pincode" #pincode="ngModel" placeholder="Enter Pincode"/>
+                </div>
+          <input type="submit" class="animated fadeInDownBig update4_animation" value="Update Customer">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
