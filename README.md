@@ -14,22 +14,20 @@ This Is Full Stack Web Based Crud
 #### Important Point
 
 ```bash
-Angular6 Files In Frontend Folder Of This Project
+Angular6 Files In Frontend Folder Of This App
 ```
 
 ```bash
-SpringBoot Files In Backend Folder Of This Project
+SpringBoot Files In Backend Folder Of This App
 ```
 
 ```bash
 Copy All Contents From Angular6 Dist Folder And Paste In Webapp Folder Of SpringBoot
 ```
 
-#### Heroku Live Project Url
+#### Heroku Live App Url
 
-```bash
-https://sba6crud.herokuapp.com
-```
+[https://sba6crud.herokuapp.com](https://sba6crud.herokuapp.com)
 
 #### Frontend Technologies
 
