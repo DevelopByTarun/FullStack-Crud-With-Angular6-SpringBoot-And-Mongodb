@@ -25,10 +25,6 @@ SpringBoot Files In Backend Folder Of This App
 Copy All Contents From Angular6 Dist Folder And Paste In Webapp Folder Of SpringBoot
 ```
 
-#### Heroku Live App Url
-
-[https://sba6crud.herokuapp.com](https://sba6crud.herokuapp.com)
-
 #### Frontend Technologies
 
 ```bash
